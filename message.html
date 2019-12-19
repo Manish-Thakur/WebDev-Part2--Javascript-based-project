@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-mail-in-JS</title>
+</head>
+<body bgcolor="white">
+
+<!--Sender Info-->
+
+From:<h4 id="from"></h4>
+<script type="text/javascript">
+
+	var from1 = prompt("Enter sender's email address!");
+	document.getElementById('from').innerHTML=from1;
+</script>
+
+<!--Receiver Info-->
+
+To:<h4 id="to"></h4>
+<script type="text/javascript">
+	var to1 = prompt("Enter receiver's email address!");
+	document.getElementById('to').innerHTML=to1;
+</script>
+
+<!--Subject Line-->
+
+Subject:<h4 id="subject"></h4>
+<script type="text/javascript">
+	var sub1 = prompt("Enter your subject line!");
+	document.getElementById('subject').innerHTML=sub1;
+</script>
+
+<!--Body-->
+
+ Message:<br>
+<br>Hi,<br><p id="body">
+<script type="text/javascript">
+	var body1 = prompt("Compose your message!");
+	document.getElementById('body').innerHTML=body1;
+</script></p>
+
+
+<!--Salutation-->
+Regards,
+<h4 id="signature"></h4>
+<script type="text/javascript">
+	var sig1 = prompt("Enter your signature!");
+	document.getElementById('signature').innerHTML=sig1;
+</script>	
+</body>
+</html>
